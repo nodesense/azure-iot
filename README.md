@@ -24,7 +24,8 @@ After installing Azure cli, open Command Prompt/Terminal,
 ```
 az extension add --name azure-cli-iot-ext
 ```
-5. Install Google Chrome or Firefox or Safary Latest Edge Browser for accessing Azure Web Portal
+
+5. Install Google Chrome or Firefox or Safari Latest Edge Browser for accessing Azure Web Portal
 
 ### Development Environment
 
@@ -35,9 +36,12 @@ This workshop shall focus on Node.js [JavaScript] as the development environment
 
 ### Azure Account
 
-1. Participant to signup with Azure Portal. Talk to Employer or Event Organizer for Azure Pass or Credit if participant doesn't want to use his/her credit card for signup.
+1. Participant to sign-up with Azure Portal. Talk to Employer or Event Organizer for Azure Pass or Credit if participant doesn't want to use personal credit card for sign-up.
 
-2. For signup https://azure.microsoft.com/en-in/free/
+2. For sign-up https://azure.microsoft.com/en-in/free/
 
 3. Azure pass activation https://www.microsoftazurepass.com/
 
+### Remember
+
+1. Remember to remove consumption based chargable services if you don't use it

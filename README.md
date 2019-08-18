@@ -45,3 +45,10 @@ This workshop shall focus on Node.js [JavaScript] as the development environment
 ### Remember
 
 1. Remember to remove consumption based chargable services if you don't use it
+
+### Pre-Requisites
+
+1. Knowledge of Basic JavaScript
+2. JavaScript Callback, basic of Await/Async method
+3. Knowledge on setting up user/system wise environment variables for the operating system
+4. Basics of Distributed systems

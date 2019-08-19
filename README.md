@@ -52,3 +52,19 @@ This workshop shall focus on Node.js [JavaScript] as the development environment
 2. JavaScript Callback, basic of Await/Async method
 3. Knowledge on setting up user/system wise environment variables for the operating system
 4. Basics of Distributed systems
+
+
+### Use Azure cli to Login
+
+Open a command prompt
+
+```
+az login
+```
+
+
+not now, if you want to logout
+
+```
+az logout
+```

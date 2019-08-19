@@ -1,10 +1,11 @@
 // device-to-cloud.js
+// Simulate a Temp device
 
 // Using the Azure CLI:
 // az iot hub device-identity show-connection-string --hub-name {YourIoTHubName} --device-id MyNodeDevice --output table
 
 // go to specific device, copy the primary connection string
-var connectionString = '....';
+var connectionString = 'HostName=krishiothub.azure-devices.net;DeviceId=temp-device-1;SharedAccessKey=CAX5JnVv6FxDKCjOMSa3j55MxN+lxhsDYTgHiSNzvAc=';
 
 // npm install azure-iot-device-mqtt
 var Mqtt = require('azure-iot-device-mqtt').Mqtt; // Protocol
@@ -37,6 +38,20 @@ setInterval(function(){
   message.contentEncoding = "utf-8";
 
   console.log('Sending message: ' + message.getData());
+
+
+ // to receive messages posted from the Iot Hub to the Device
+ // MQTT, subscription
+ client.on('message', function (msg) {
+    // console.log('msg ', msg, msg.properties.propertyList);
+    console.log('msg ', msg)
+    console.log('Got message from cloud:  Id: ' + msg.messageId + ' Body: ' + msg.data);
+    // acknowledgement
+    // client.complete(msg, function(result) {
+    //     console.log('ack result ' + result)
+    // });
+  });
+
 
   // Send the message to the cloud, iot hub using MQTT Protocol
   client.sendEvent(message, function (err) {

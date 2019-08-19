@@ -4,8 +4,10 @@
 
 // Using the Azure CLI:
 // az iot hub show-connection-string --hub-name {YourIoTHubName} --output table
-var connectionString = '<<>>';
- 
+var connectionString = '<<<>>>';
+
+// npm install azure-iothub
+
 var Client = require('azure-iothub').Client;
 
 var deviceId = '<<<>>>';

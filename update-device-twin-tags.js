@@ -5,7 +5,7 @@
 
 var iothub = require('azure-iothub');
 // IOT Hub Owner connection string from the shared access polices
-var connectionString = 'HostName=krishiothub.azure-devices.net;SharedAccessKeyName=iothubowner;SharedAccessKey=TZijQeHBCyk7rb7ipBHUXsxhJPqSGSnknYYWYjIrMQg=';
+var connectionString = '';
 var registry = iothub.Registry.fromConnectionString(connectionString);
 
 var queryTwins = function() {

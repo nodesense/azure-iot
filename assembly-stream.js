@@ -8,7 +8,7 @@
 
 // create a device called "assembly-1" in the iot hub
 // go to specific device, copy the primary connection string
-var connectionString = 'HostName=krishiothub.azure-devices.net;DeviceId=assembly-1;SharedAccessKey=PFVJ2hENitU2a+pD83e4K5dOlWo4ifgvmVERxZLVYSE=';
+var connectionString = '';
 
 // npm install azure-iot-device-mqtt
 var Mqtt = require('azure-iot-device-mqtt').Mqtt; // Protocol
